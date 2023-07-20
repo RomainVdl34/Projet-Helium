@@ -1,0 +1,57 @@
+.infos {
+    background: $color1;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    h3 {
+        padding: 15px;
+    }
+    
+    .infos-left {
+
+        .btn-container {
+            height: 80%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: left;
+
+            button {
+                margin: 0 0 10px 0;
+                height: 40px;
+                width: 170px;
+                background: $color4;
+                color: $color3;
+                border: none;
+                border-radius: 15px;
+                font-size: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .infos-right {
+
+        .investors {
+            height: 70%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-container {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
