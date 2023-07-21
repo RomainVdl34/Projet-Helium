@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter", sans-serif;
-  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(../fonts/Inter-VariableFont_slntwght.ttf);
 }
 * {
   padding: 0;
@@ -45,6 +45,7 @@ nav ul li:last-child {
 }
 
 .header {
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +64,7 @@ nav ul li:last-child {
   font-weight: 600;
   padding-bottom: 20px;
 }
-.header .header-left h3 {
+.header h3 {
   color: rgb(5, 5, 230);
   font-size: 1.9rem;
   font-weight: 500;
