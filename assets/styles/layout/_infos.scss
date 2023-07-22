@@ -4,28 +4,32 @@
   display: grid;
   grid-template-columns: 30% 70%;
 
-  h3 {
-    padding: 15px;
+  @media screen and (max-width: 730px) {
+    display: block;
   }
 
   .infos-left {
+    @media screen and (max-width: 730px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .btn-container {
-      height: 80%;
-      padding: 15px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: left;
 
       button {
-        margin: 0 0 10px 0;
         height: 40px;
-        width: 170px;
+        width: 160px;
+        margin: 7px;
         background: $color4;
         color: $color3;
         border: none;
         border-radius: 15px;
-        font-size: 1rem;
+        font-family: "Inter";
         font-weight: bold;
         cursor: pointer;
       }
@@ -33,6 +37,10 @@
   }
 
   .infos-right {
+    @media screen and (max-width: 730px) {
+      text-align: center;
+    }
+
     .investors {
       height: 70%;
       width: 100%;
@@ -42,12 +50,19 @@
 
       .img-container {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         img {
-          width: 100px;
+          width: 120px;
+
+          @media screen and (max-width: 540px) {
+            width: 80px;
+          }
+
+          @media screen and (max-width: 380px) {
+            width: 60px;
+          }
         }
       }
     }
