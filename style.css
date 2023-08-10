@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "interval";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+
+body {
+    font-family: "interval", sans-serif;
+    background: rgb(19, 19, 19);
+    color: rgb(245, 245, 245);
+    position: relative;
+    cursor: none;
+}
+
+#circle1 {
+    height: 2px;
+    width: 2px;
+    background: rgb(40, 40, 218);
+    border-radius: 150px;
+    position: absolute;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
+#circle2 {
+    height: 30px;
+    width: 30px;
+    background: rgb(245, 245, 245);
+    border-radius: 150px;
+    position: absolute;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: 0.1s ease;
+}
+#circle3 {
+    height: 60px;
+    width: 60px;
+    background: rgb(19, 19, 19);
+    border-radius: 150px;
+    position: absolute;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease;
+}
+
+nav {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li {
+    transition: 0.2s ease;
+    z-index: 200;
+}
+nav li:hover {
+    color: rgb(40, 40, 218);
+    transform: scale(1.5);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.main-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+h3 {
+    color: rgb(40, 40, 218);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+p {
+    font-size: 0.9rem;
+}
+#modem {
+    width: 100%;
+}
+
+footer {
+    background: rgb(7, 7, 7);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+button {
+    margin: 5px;
+    height: 40px;
+    width: 140px;
+    background: rgb(40, 40, 218);
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    cursor: none;
+    z-index: 200;
+}
+button:hover {
+    background: rgb(245, 245, 245);
+    color: rgb(7, 7, 7);
+    transform: scale(1.03);
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+.logo-container {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+
+
+/* Média Queries */
+
+@media screen and (max-width: 950px) {
+    nav {
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        display: block;
+    }
+    .main-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #modem {
+        width: 50%;
+    }
+    footer {
+        display: block;
+    }
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-right {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    nav {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+    .logo {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        font-size: 0.6rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 0.5rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    button {
+    margin: 5px;
+    height: 25px;
+    width: 95px;
+    border-radius: 12px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    .logo {
+        width: 40px;
+    }
+}
